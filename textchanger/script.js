@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector("#change").addEventListener("click", function () {
-        var text = document.querySelector("#origintext").value;
-        var op = document.querySelector("#sel").selectedIndex;
+        let text = document.querySelector("#origintext").value;
+        let op = document.querySelector("#sel").selectedIndex;
 
-        var textFinal = "";
+        let textFinal = "";
 
         switch (op) {
             case 0:
@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         document.querySelector("#result").value = textFinal;
+    })
+
+    document.querySelector("#copy").addEventListener("click", function () {
+        document.querySelector("#result").select();
+        document.execCommand("copy");
     })
 
     function upper(text) {
