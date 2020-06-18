@@ -1,0 +1,53 @@
+input, button, select {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    height: 30px;
+}
+
+div {
+    width: 300px;
+    margin: 10px 20px 20px 20px;
+    padding: 30px 30px 30px 30px;
+    border: 5px outset #1C6EA4;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    border: 0px;
+    border-bottom: 1.5px solid orange;
+}
+
+select {
+    border: 0px;
+    border-bottom: 1.5px solid orange;
+}
+
+input[type="text"]:focus {
+    border: 0px;
+}
+
+button {
+    font-variant: small-caps;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+#copy {
+    background-color: royalblue;
+}
+
+#change {
+    background-color: forestgreen;
+    margin-left: 20px;
+}
